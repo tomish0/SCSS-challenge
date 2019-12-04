@@ -1,0 +1,224 @@
+@font-face {
+  src: url(aniron/anirb___.ttf);
+  font-family: aniron;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: aniron;
+  margin: 0 auto;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 10px;
+  padding: 0 10px;
+  background-color: #ee692d;
+  color: white;
+  border-bottom: 0.3px solid black;
+}
+
+header h2 {
+  margin: 3px;
+}
+
+header ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 3px;
+}
+
+header ul > li {
+  color: white;
+  padding: 0 7px;
+  border-right: 0.5px solid white;
+}
+
+header ul > li:hover {
+  border-bottom: 0.5px solid white;
+}
+
+header ul > li:last-child {
+  border-right: 0px;
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 30px 0 15px 0;
+}
+
+main .top h3 {
+  margin: 0 15px;
+}
+
+main .top .circle {
+  height: 30px;
+  width: 30px;
+  border: 3px solid orange;
+  border-radius: 50%;
+  -webkit-box-shadow: 0 0 0 white, inset 0 0 0 white;
+          box-shadow: 0 0 0 white, inset 0 0 0 white;
+}
+
+main .middle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .middle h3 {
+  margin-left: 30px;
+}
+
+main .middle .circle {
+  height: 100px;
+  width: 100px;
+  border: 7px solid #f4cb46;
+  border-radius: 50%;
+  -webkit-box-shadow: 1px 1px 2px #b6b6b6, inset 1px 1px 2px #b6b6b6;
+          box-shadow: 1px 1px 2px #b6b6b6, inset 1px 1px 2px #b6b6b6;
+}
+
+main .circle_wrapper {
+  height: 100px;
+  width: 150px;
+  position: relative;
+}
+
+main .circle_wrapper .circle {
+  height: 25px;
+  width: 25px;
+  border: 2px solid grey;
+  border-radius: 50%;
+  -webkit-box-shadow: 0 0 0 white, inset 0 0 0 white;
+          box-shadow: 0 0 0 white, inset 0 0 0 white;
+}
+
+main .circle_wrapper .circle.circle_1 {
+  top: 70%;
+  left: 0%;
+  -webkit-transform: translate(45%, -50%);
+          transform: translate(45%, -50%);
+  position: absolute;
+  height: 23px;
+  width: 23px;
+  border: 2.4px solid grey;
+}
+
+main .circle_wrapper .circle.circle_2 {
+  top: 70%;
+  left: 0%;
+  -webkit-transform: translate(90%, -50%);
+          transform: translate(90%, -50%);
+  position: absolute;
+  height: 26px;
+  width: 26px;
+  border: 2.8px solid grey;
+}
+
+main .circle_wrapper .circle.circle_3 {
+  top: 70%;
+  left: 0%;
+  -webkit-transform: translate(135%, -50%);
+          transform: translate(135%, -50%);
+  position: absolute;
+  height: 29px;
+  width: 29px;
+  border: 3.2px solid grey;
+}
+
+main .circle_wrapper .circle.circle_4 {
+  top: 70%;
+  left: 0%;
+  -webkit-transform: translate(180%, -50%);
+          transform: translate(180%, -50%);
+  position: absolute;
+  height: 32px;
+  width: 32px;
+  border: 3.6px solid grey;
+}
+
+main .circle_wrapper .circle.circle_5 {
+  top: 70%;
+  left: 0%;
+  -webkit-transform: translate(225%, -50%);
+          transform: translate(225%, -50%);
+  position: absolute;
+  height: 35px;
+  width: 35px;
+  border: 4px solid grey;
+}
+
+main .circle_wrapper .circle.circle_6 {
+  top: 70%;
+  left: 0%;
+  -webkit-transform: translate(270%, -50%);
+          transform: translate(270%, -50%);
+  position: absolute;
+  height: 38px;
+  width: 38px;
+  border: 4.4px solid grey;
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 10px;
+  padding: 0 10px;
+  background-color: #ee692d;
+  color: white;
+  border-top: 0.3px solid black;
+}
+
+footer ul {
+  padding: 0;
+}
+/*# sourceMappingURL=index.css.map */

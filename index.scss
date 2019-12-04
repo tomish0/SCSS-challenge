@@ -1,0 +1,144 @@
+@font-face {
+  src: url(aniron/anirb___.ttf);
+  font-family: aniron;
+}
+
+$main-font: aniron;
+
+@mixin ring($height, $width, $thickness, $color, $x, $y, $blur, $shadow-color) {
+  height: $height;
+  width: $width;
+  border: $thickness solid $color;
+  border-radius: 50%;
+  box-shadow: $x $y $blur $shadow-color, inset $x $y $blur $shadow-color;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $main-font;
+  margin: 0 auto;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  font-size: 10px;
+  padding: 0 10px;
+  background-color: rgb(238, 105, 45);
+  color: white;
+  border-bottom: 0.3px solid black;
+
+  h2 {
+    margin: 3px;
+  }
+
+  ul {
+    display: flex;
+    align-items: center;
+    margin: 3px;
+
+    > li {
+      color: white;
+      padding: 0 7px;
+      border-right: 0.5px solid white;
+      &:hover {
+        border-bottom: 0.5px solid white;
+      }
+    }
+
+    > li:last-child {
+      border-right: 0px;
+    }
+  }
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .top {
+    display: flex;
+    align-items: center;
+    margin: 30px 0 15px 0;
+
+    h3 {
+      margin: 0 15px;
+    }
+
+    .circle {
+      @include ring(30px, 30px, 3px, orange, 0, 0, 0, white);
+    }
+  }
+
+  .middle {
+    display: flex;
+    align-items: center;
+
+    h3 {
+      margin-left: 30px;
+    }
+
+    .circle {
+      @include ring(
+        100px,
+        100px,
+        7px,
+        rgb(244, 203, 70),
+        1px,
+        1px,
+        2px,
+        rgb(182, 182, 182)
+      );
+    }
+  }
+
+  .circle_wrapper {
+    height: 100px;
+    width: 150px;
+    position: relative;
+
+    .circle {
+      @include ring(25px, 25px, 2px, grey, 0, 0, 0, white);
+
+      @for $i from 1 through 6 {
+        &.circle_#{$i} {
+          top: 70%;
+          left: 0%;
+          transform: translate(45% * $i, -50%);
+          position: absolute;
+          height: 20 + 10px * $i * 0.3;
+          width: 20 + 10px * $i * 0.3;
+          border: 2 + 4px * $i * 0.1 solid grey;
+        }
+      }
+    }
+  }
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  font-size: 10px;
+  padding: 0 10px;
+  background-color: rgb(238, 105, 45);
+  color: white;
+  border-top: 0.3px solid black;
+
+  ul {
+    padding: 0;
+  }
+}
